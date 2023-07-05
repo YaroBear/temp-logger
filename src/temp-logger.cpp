@@ -16,8 +16,8 @@ const char *password = "";
 void setup() {
   Serial.begin(115200);
 
+  SPIFFS.begin();
   connectToWiFi(ssid, password);
-
   setupSensor();
   setupAPI();
   timeClient.begin();

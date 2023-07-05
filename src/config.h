@@ -9,6 +9,12 @@ enum tempUnit
   celsius
 };
 
+const char * const tempUnitStr[] =
+{
+    [fahrenheit] = "f",
+    [celsius] = "c"
+};
+
 tempUnit currentTempUnit = tempUnit::fahrenheit;
 
 void setTemperatureUnit(tempUnit temperatureUnit) {
