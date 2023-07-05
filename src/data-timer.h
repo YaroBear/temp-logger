@@ -15,7 +15,7 @@ bool shouldRecord() {
     unsigned long currentTime = millis();
 
     if (currentTime >= delayTime + startingTime) {
-        startingTime = millis();
+        startingTime = currentTime;
         return true;
     }
 
